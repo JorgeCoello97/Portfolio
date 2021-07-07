@@ -1,0 +1,136 @@
+main .column-center {
+    flex: 4;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 2rem;
+}
+
+.device_container{
+    border-radius: 10px;
+    backdrop-filter: blur(200px);
+    border: .7px solid rgba(255,255,255,.2);
+    display: flex;
+    justify-content: center;
+    overflow-y: hidden;
+}
+.main_container {
+    flex: 2;
+    margin-left: 1rem;
+    display: flex;
+    flex-flow: column wrap;
+}
+.container_title{
+    flex: 1;
+}
+.project_title {
+    text-align: center;
+    font-family: fontCustom;
+    letter-spacing: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.container_player{
+    flex: 2;
+    margin: 1rem 0;
+    border-radius: 10px;
+    backdrop-filter: blur(200px);
+    border: .7px solid rgba(255,255,255,.2);
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+.container_player_controls {
+    flex: 5;
+    display: flex;
+    flex-flow: column wrap;
+}
+.container_player_control_time {
+    flex: 1;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+}
+#elapsedTime, #durationTime {
+    flex: 1;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 8pt;    
+    text-align: center;
+    cursor: default;
+    color: white;
+}
+#slider_currentTime {
+    flex: 5;
+}
+
+.container_player_control_playback{
+    flex: 1;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+}
+#buttonLess10Seconds, #buttonPlay, #buttonPause,
+#buttonMore10Seconds, #buttonStop, #buttonMaximize {
+    flex:1;
+}
+#buttonPause {
+    display: none;
+}
+.button_control_player {
+    width: 25px;
+    height: 25px;
+    fill: white;
+    cursor: pointer;
+    margin: 5px;
+}
+.button_control_player:hover {
+    fill: #ffc400;
+    cursor: pointer;
+}
+
+.container_player_volume {
+    flex: 1;
+    display: flex;
+    flex-flow: row wrap;
+    
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+
+.container_description {
+    flex: 7;
+    padding: .5rem;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    border: .7px solid rgba(255,255,255,.2);
+}
+
+.project_description {
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    font-size: 12pt;
+    background-color: #ddd;
+    cursor: default;
+    resize: none;
+    border-radius: 10px;
+    overflow-y: auto;
+}
+
+
+@media all and (max-width:  1050px){
+    main .column-center, main {
+        flex-flow: column wrap;
+    }
+    .container_title {
+        order: 1;
+    }
+    .container_player{
+        order: 0;
+    }
+    .container_description {
+        order: 2;
+    }
+}

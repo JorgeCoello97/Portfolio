@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PORTAFOLIO</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, height=device-height initial-scale=1.0">
+        <link href="css/index.css" rel="stylesheet" type="text/css"/>
+        <link href="css/aboutme.css" rel="stylesheet" type="text/css"/>
+        <link rel="icon" type="image/png" href="img/logo.png"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav class="nav_no_oculto">
+                <a href="index.html" onclick="checkSongIsPlaying()">PRINCIPAL</a>
+                <a href="#" class="active">SOBRE MI</a>
+                <a href="portfolio.html" onclick="checkSongIsPlaying()">PORTAFOLIO</a>
+                <a href="contact.html" onclick="checkSongIsPlaying()">CONTACTO</a>
+            </nav>
+            <a href="javascript:void(0);" 
+               class="menu" onclick="clickMenuHamburger()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </a>
+        </header>
+
+        <main>
+            <div class="column void"></div>
+            <div class="column-center">
+                <div class="container_main">
+                    <div class="section_main">
+                        <h3 class="section_main_title">EXPERIENCIA</h3>
+                        <div class="section_main_content">
+                            <div class="card">
+                                <div  class="card_image nivel_universidad">
+                                    <img 
+                                        src="img/aboutme/enterprise_big.png" 
+                                        alt="Capgemini"/>
+                                </div>
+                                <div class="card_description">
+                                    <p><span style="font-weight: bold;">Empresa:</span> Capgemini</p>
+                                    <p><span style="font-weight: bold;">Cargo:</span> Integrador de  servicios web</p>
+                                    <p><span style="font-weight: bold;">Duración:</span> 9 meses - Actualidad </p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div  class="card_image nivel_fp_superior">
+                                    <img 
+                                        src="img/aboutme/enterprise_medium.png" 
+                                        alt="Mobincube"/>
+                                </div>
+                                <div class="card_description">
+                                    <p><span style="font-weight: bold;">Empresa:</span> Mobincube</p>
+                                    <p><span style="font-weight: bold;">Cargo:</span> Desarrollador web</p>
+                                    <p><span style="font-weight: bold;">Duración:</span> 4 meses (2017)</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div  class="card_image nivel_fp_medio">
+                                    <img 
+                                        src="img/aboutme/enterprise_small.png" 
+                                        alt="Label System S.L."/>
+                                </div>
+                                <div class="card_description">
+                                    <p><span style="font-weight: bold;">Empresa:</span> Label System S.L.</p>
+                                    <p><span style="font-weight: bold;">Cargo:</span> Técnico de mantenimiento</p>
+                                    <p><span style="font-weight: bold;">Duración:</span> 4 meses (2015)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section_main">
+                        <h3 class="section_main_title">EDUCACIÓN</h3>
+                        <div class="section_main_content">
+                            <div class="card">
+                                <div  class="card_image nivel_universidad">
+                                    <img 
+                                        src="img/aboutme/universidad.png" 
+                                        alt="Capgemini"/>
+                                </div>
+                                <div class="card_description">
+                                    <p><span style="font-weight: bold;">Centro:</span> Universidad de Valencia</p>
+                                    <p><span style="font-weight: bold;">Nivel:</span> Universidad</p>
+                                    <p><span style="font-weight: bold;">Curso:</span> Grado en Ingeniería Informática</p>
+                                    <p><span style="font-weight: bold;">Fecha:</span> 2017-2021</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div  class="card_image nivel_fp_superior">
+                                    <img 
+                                        src="img/aboutme/instituto2.png" 
+                                        alt="Mobincube"/>
+                                </div>
+                                <div class="card_description">
+                                    <p><span style="font-weight: bold;">Centro:</span> IES Serpis</p>
+                                    <p><span style="font-weight: bold;">Nivel:</span> FP Grado Superior</p>
+                                    <p><span style="font-weight: bold;">Curso:</span> Desarrollo de Aplicaciones Multiplataforma</p>
+                                    <p><span style="font-weight: bold;">Fecha:</span> 2015-2017</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div  class="card_image nivel_fp_medio">
+                                    <img 
+                                        src="img/aboutme/instituto1.png" 
+                                        alt="IES Fuente San Luis"/>
+                                </div>
+                                <div class="card_description">
+                                    <p><span style="font-weight: bold;">Centro:</span> IES Fuente San Luis</p>
+                                    <p><span style="font-weight: bold;">Nivel:</span> FP Grado Medio</p>
+                                    <p><span style="font-weight: bold;">Curso:</span> Sistemas Microinfórmaticos y Redes</p>
+                                    <p><span style="font-weight: bold;">Fecha:</span> 2013-2015</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section_main">
+                        <h3 class="section_main_title">HABILIDADES</h3>
+                        <div class="section_main_content">
+                            <div class="card card_large">
+                                <div  class="card_image nivel_universidad">
+                                    <img 
+                                        src="img/aboutme/cloud_computing.png" 
+                                        alt="Skills"/>
+                                </div>
+                                <div class="card_description no_padding">
+                                    <div class="skills">
+                                        <div class="column_skills">
+                                            <ul>
+                                                <li>Estructuras de datos</li>
+                                                <li>Gestión de proyectos</li>
+                                                <li>Diseño de interfaces</li>
+                                                <li>API's REST/SOAP </li>
+                                                <li>WSDL</li>                                                
+                                            </ul>
+                                        </div>
+                                        <div class="column_skills">
+                                            <ul>
+                                                <li>Mulesoft</li>
+                                                <li>Postman</li>
+                                                <li>Jira Automations</li>
+                                                <li>RAML y Swaggers</li>
+                                                <li>YAML</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card card_large">
+                                <div  class="card_image nivel_fp_superior">
+                                    <img 
+                                        src="img/aboutme/coding.png" 
+                                        alt="Skills"/>
+                                </div>
+                                <div class="card_description no_padding">
+                                    <div class="skills">
+                                        <div class="column_skills">
+                                            <ul>
+                                                <li>HTML5</li>
+                                                <li>CSS3</li>
+                                                <li>JS</li>
+                                                <li>React.js</li>
+                                                <li>DTD</li>
+                                            </ul>
+                                        </div>
+                                        <div class="column_skills">
+                                            <ul>
+
+                                                <li>Java</li>
+                                                <li>Android</li>
+                                                <li>SQL</li>
+                                                <li>Git</li>
+                                                <li>ERP</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card card_large">
+                                <div  class="card_image nivel_fp_medio">
+                                    <img 
+                                        src="img/aboutme/tools.png" 
+                                        alt="Skills"/>
+                                </div>
+                                <div class="card_description no_padding">
+                                    <div class="skills">
+                                        <div class="column_skills">
+                                            <ul>
+                                                <li>Reparar sobremesas</li>
+                                                <li>Reparar portatiles</li>
+                                                <li>CMS</li>
+                                            </ul>
+                                        </div>
+                                        <div class="column_skills">
+                                            <ul>
+                                                <li>Configurar FTP</li>
+                                                <li>Configurar Apache Web</li>
+                                                <li>Configurar SMTP</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="container_buttonCV" method="get" action="files/cv.pdf">
+                    <button type="submit" class="buttonCV">DESCARGAR CV</button>
+                </form>
+            </div>
+            <div class="column void"></div>
+        </main>
+        <footer>
+            <div class="column_player">
+
+                <div class="player">
+
+                    <div class="cover">
+                        <img src="img/vinilo.png"/>
+                    </div>
+
+                    <div class="player_info">
+                        <p id="title_song">I Need You Back</p>
+                        <div class="player_time">
+                            <div class="player_time_container_currentime">
+                                <span id="player_current_time">00:00</span>
+                            </div>
+                            <div class="player_time_container_duration">
+                                <span id="player_duration">59:59</span>
+                            </div>
+                        </div>
+                        <div class="player_controls">
+                            <audio id="player" preload="auto">
+                            </audio>
+                            <div class="controls">
+                                <span class="expend"><svg class="step-backward" viewBox="0 0 25 25" xml:space="preserve">
+                                    <g>
+                                    <polygon points="4.9,4.3 9,4.3 9,11.6 21.4,4.3 21.4,20.7 9,13.4 9,20.7 4.9,20.7" />
+                                    </g>
+                                    </svg></span>
+
+                                <svg id="play" viewBox="0 0 25 25" xml:space="preserve">
+                                <defs>
+                                <rect x="-49.5" y="-132.9" width="446.4" height="366.4" />
+                                </defs>
+                                <g>
+                                <circle fill="none" cx="12.5" cy="12.5" r="10.8" />
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.7,6.9V18c0,0,0.2,1.4,1.8,0l8.1-4.8c0,0,1.2-1.1-1-2L9.8,6.5 C9.8,6.5,9.1,6,8.7,6.9z" />
+                                </g>
+                                </svg>
+
+                                <svg id="pause" viewBox="0 0 25 25" xml:space="preserve">
+                                <g>
+                                <rect x="6" y="4.6" width="3.8" height="15.7" />
+                                <rect x="14" y="4.6" width="3.9" height="15.7" />
+                                </g>
+                                </svg>
+
+                                <span class="expend"><svg class="step-foreward" viewBox="0 0 25 25" xml:space="preserve">
+                                    <g>
+                                    <polygon points="20.7,4.3 16.6,4.3 16.6,11.6 4.3,4.3 4.3,20.7 16.7,13.4 16.6,20.7 20.7,20.7" />
+                                    </g>
+                                    </svg></span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="column-center">
+                <div class="footer-contact">
+                    <div class="column">
+                        <div class="column  void"></div>
+                        <img src="img/movil.png" alt="My number phone"/>
+                        <a href="tel:+34617968670">(+34)617 968 670</a>                       
+                    </div>
+                    <div class="column">
+                        <img src="img/correo.png" alt="My email"/>
+                        <a href="mailto:jorchcoello97@gmail.com">jorchcoello97@gmail.com</a>
+                        <div class="column  void"></div>
+                    </div>
+                </div>
+                <div class="footer-autor">
+                    <div class="autor">
+                        <div class="column  void"></div>
+                        <span class="name">Jorge Coello Moncada</span>
+                        <span class="career">(Ingeniería Informática)</span>
+                        <div class="column  void"></div>
+                    </div>
+                    <span class="year">©2021</span>
+                </div>
+            </div>
+            <div class="column  void"></div>
+        </footer>
+        <script src="js/index.js" type="text/javascript"></script>
+    </body>
+</html>

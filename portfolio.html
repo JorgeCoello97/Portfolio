@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PORTAFOLIO</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, height=device-height initial-scale=1.0">
+        <link href="css/index.css" rel="stylesheet" type="text/css"/>
+        <link href="css/portfolio.css" rel="stylesheet" type="text/css"/>
+        <link rel="icon" type="image/png" href="img/logo.png"/>
+        <link rel="stylesheet" href="css/tingle.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+    </head>
+    <body>
+        <header>
+            <nav class="nav_no_oculto">
+                <a href="index.html" onclick="checkSongIsPlaying()">PRINCIPAL</a>
+                <a href="aboutme.html" onclick="checkSongIsPlaying()">SOBRE MI</a>
+                <a href="#" class="active" onclick="checkSongIsPlaying()">PORTAFOLIO</a>
+                <a href="contact.html" onclick="checkSongIsPlaying()">CONTACTO</a>
+            </nav>
+            <a href="javascript:void(0);" 
+               class="menu" onclick="clickMenuHamburger()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </a>
+        </header>
+
+        <main>
+            <div class="column void"></div>
+            <div class="column-center">
+                <div class="main_container">
+                    <div class="section_main">
+                        <h3 class="section_main_title">MIS PROYECTOS</h3>
+                        <div class="section_main_content">
+                            <div class="projects">
+                                <div class="div1 project-container">
+                                    <div class="project-item">
+                                        <div class="image">
+                                            <img src="img/portfolio/virtualclassroom/virtualclassroom.png">
+                                            <div id="1" class="overlay" onmouseover="setEffectHover(this)" onclick="openDetailsProject(this)">
+                                                <div class="text">
+                                                    <h4>APP MÓVIL</h4>
+                                                    <p>Virtual Classroom</p>
+                                                    <p>(TFG Ingeniería Informática)</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="div2 project-container">
+                                    <div class="project-item">
+                                        <div class="image">
+                                            <img src="img/portfolio/portafolio/portafolio.png">
+                                            <div id="2" class="overlay" onmouseover="setEffectHover(this)" onclick="openDetailsProject(this)">
+                                                <div class="text">
+                                                    <h4>WEB</h4>
+                                                    <p>Portafolio</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="div3 project-container">
+                                    <div class="project-item">
+                                        <div class="image">
+                                            <img src="img/portfolio/covid/covid.png">
+                                            <div id="3" class="overlay" onmouseover="setEffectHover(this)" onclick="openDetailsProject(this)">
+                                                <div class="text">
+                                                    <h4>APP MÓVIL</h4>
+                                                    <p>Covid</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="div4 project-container">
+                                    <div class="project-item">
+                                        <div class="image">
+                                            <img src="img/portfolio/todolist/todolist.png">
+                                            <div id="4" class="overlay" onmouseover="setEffectHover(this)" onclick="openDetailsProject(this)">
+                                                <div class="text">
+                                                    <h4>APP MÓVIL</h4>
+                                                    <p>To Do List</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="div5 project-container">
+                                    <div class="project-item">
+                                        <div class="image">
+                                            <img src="img/portfolio/paint/paint.jpg">
+                                            <div id="5" class="overlay" onmouseover="setEffectHover(this)" onclick="openDetailsProject(this)">
+                                                <div class="text">
+                                                    <h4>APP ESCRITORIO</h4>
+                                                    <p>Paint</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="div6 project-container">
+                                    <div class="project-item">
+                                        <div class="image">
+                                            <img src="img/portfolio/clientecar/clientecar.jpg">
+                                            <div id="6" class="overlay" onmouseover="setEffectHover(this)" onclick="openDetailsProject(this)">
+                                                <div class="text">
+                                                    <h4>APP MÓVIL</h4>
+                                                    <p>CAR</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="div7 project-container">
+                                    <div class="project-item">
+                                        <div class="image">
+                                            <img src="img/portfolio/graficas/graficas.jpg">
+                                            <div id="7" class="overlay" onmouseover="setEffectHover(this)" onclick="openDetailsProject(this)">
+                                                <div class="text">
+                                                    <h4>APP MÓVIL</h4>
+                                                    <p>Gráficas</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="div8 project-container">
+                                    <div class="project-item">
+                                        <div class="image">
+                                            <img src="img/portfolio/hotelsweetdreams/hotelsweetdreams.jpg">
+                                            <div id="8" class="overlay" onmouseover="setEffectHover(this)" onclick="openDetailsProject(this)">
+                                                <div class="text">
+                                                    <h4>APP ESCRITORIO</h4>
+                                                    <p>Hotel Sweet Dreams</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="div9 project-container">
+                                    <div class="project-item">
+                                        <div class="image">
+                                            <img src="img/portfolio/simulador/simulador.png">
+                                            <div id="9" class="overlay" onmouseover="setEffectHover(this)" onclick="openDetailsProject(this)">
+                                                <div class="text">
+                                                    <h4>APP ESCRITORIO</h4>
+                                                    <p>Simulador Ecosistema</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="div10 project-container">
+                                    <div class="project-item">
+                                        <div class="image">
+                                            <img src="img/portfolio/word_tv/word_tv.png">
+                                            <div id="10" class="overlay" onmouseover="setEffectHover(this)" onclick="openDetailsProject(this)">
+                                                <div class="text">
+                                                    <h4>WEB</h4>
+                                                    <p>World TV</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="div11 project-container">
+                                    <div class="project-item">
+                                        <div class="image">
+                                            <img src="img/portfolio/login/login.png">
+                                            <div id="11" class="overlay" onmouseover="setEffectHover(this)" onclick="openDetailsProject(this)">
+                                                <div class="text">
+                                                    <h4>APP MÓVIL</h4>
+                                                    <p>Login</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="div12 project-container">
+                                    <div class="project-item">
+                                        <div class="image">
+                                            <img src="img/portfolio/firechat/firechat.jpg">
+                                            <div id="12" class="overlay" onmouseover="setEffectHover(this)" onclick="openDetailsProject(this)">
+                                                <div class="text">
+                                                    <h4>APP MÓVIL</h4>
+                                                    <p>Firechat</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="div13 project-container">
+                                    <div class="project-item">
+                                        <div class="image">
+                                            <img src="img/portfolio/aulavirtual/aulavirtual.png">
+                                            <div id="13" class="overlay" onmouseover="setEffectHover(this)" onclick="openDetailsProject(this)">
+                                                <div class="text">
+                                                    <h4>APP MÓVIL</h4>
+                                                    <p>Aula virtual</p>
+                                                    <p>(Proyecto Final FP Superior)</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="div14 project-container">
+                                    <div class="project-item">
+                                        <div class="image">
+                                            <img src="img/portfolio/servidorweb/servidorweb.png">
+                                            <div  id="14" class="overlay" onmouseover="setEffectHover(this)" onclick="openDetailsProject(this)">
+                                                <div class="text">
+                                                    <h4>APP MÓVIL</h4>
+                                                    <p>Servidor web embebido</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column void"></div>
+        </main>
+        <footer>
+            <div class="column_player">
+
+                <div class="player">
+
+                    <div class="cover">
+                        <img src="img/vinilo.png"/>
+                    </div>
+
+                    <div class="player_info">
+                        <p id="title_song">I Need You Back</p>
+                        <div class="player_time">
+                            <div class="player_time_container_currentime">
+                                <span id="player_current_time">00:00</span>
+                            </div>
+                            <div class="player_time_container_duration">
+                                <span id="player_duration">59:59</span>
+                            </div>
+                        </div>
+                        <div class="player_controls">
+                            <audio id="player" preload="auto">
+                            </audio>
+                            <div class="controls">
+                                <span class="expend"><svg class="step-backward" viewBox="0 0 25 25" xml:space="preserve">
+                                    <g>
+                                    <polygon points="4.9,4.3 9,4.3 9,11.6 21.4,4.3 21.4,20.7 9,13.4 9,20.7 4.9,20.7" />
+                                    </g>
+                                    </svg></span>
+
+                                <svg id="play" viewBox="0 0 25 25" xml:space="preserve">
+                                <defs>
+                                <rect x="-49.5" y="-132.9" width="446.4" height="366.4" />
+                                </defs>
+                                <g>
+                                <circle fill="none" cx="12.5" cy="12.5" r="10.8" />
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.7,6.9V18c0,0,0.2,1.4,1.8,0l8.1-4.8c0,0,1.2-1.1-1-2L9.8,6.5 C9.8,6.5,9.1,6,8.7,6.9z" />
+                                </g>
+                                </svg>
+
+                                <svg id="pause" viewBox="0 0 25 25" xml:space="preserve">
+                                <g>
+                                <rect x="6" y="4.6" width="3.8" height="15.7" />
+                                <rect x="14" y="4.6" width="3.9" height="15.7" />
+                                </g>
+                                </svg>
+
+                                <span class="expend"><svg class="step-foreward" viewBox="0 0 25 25" xml:space="preserve">
+                                    <g>
+                                    <polygon points="20.7,4.3 16.6,4.3 16.6,11.6 4.3,4.3 4.3,20.7 16.7,13.4 16.6,20.7 20.7,20.7" />
+                                    </g>
+                                    </svg></span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="column-center">
+                <div class="footer-contact">
+                    <div class="column">
+                        <div class="column  void"></div>
+                        <img src="img/movil.png" alt="My number phone"/>
+                        <a href="tel:+34617968670">(+34)617 968 670</a>                       
+                    </div>
+                    <div class="column">
+                        <img src="img/correo.png" alt="My email"/>
+                        <a href="mailto:jorchcoello97@gmail.com">jorchcoello97@gmail.com</a>
+                        <div class="column  void"></div>
+                    </div>
+                </div>
+                <div class="footer-autor">
+                    <div class="autor">
+                        <div class="column  void"></div>
+                        <span class="name">Jorge Coello Moncada</span>
+                        <span class="career">(Ingeniería Informática)</span>
+                        <div class="column  void"></div>
+                    </div>
+                    <span class="year">©2021</span>
+                </div>
+            </div>
+            <div class="column  void"></div>
+        </footer>
+        <script src="js/tingle.min.js"></script>
+        <script src="js/index.js" type="text/javascript"></script>
+        <script src="js/portafolio.js" type="text/javascript"></script>
+    </body>
+</html>
