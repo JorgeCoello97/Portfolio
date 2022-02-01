@@ -8,6 +8,7 @@ var step_backwardButton = document.getElementsByClassName("step-backward")[0];
 var step_forewardButton = document.getElementsByClassName("step-foreward")[0];
 
 pauseButton.style.display = "none";
+player_duration.style.display = "none";
 var list_songs;
 var current_song = 0;
 var current_song_time = 0;
@@ -30,12 +31,13 @@ $.getJSON("files/list_songs.json", function (json) {
                 cover_img.style.animation = "rotateDisc 4s linear infinite";
                 playButton.style.display = "none";
                 pauseButton.style.display = "initial";
+                player_duration.style.display = "initial";
 
                 sessionStorage.removeItem("currentSong");
                 sessionStorage.removeItem("currentSongTime");
             }
         };
-    } else {
+    } /*else {
         if (!sessionStorage.noFirstTime) {
             player.src = 'mp3/' + list_songs[current_song].file;
             player.load();
@@ -57,7 +59,7 @@ $.getJSON("files/list_songs.json", function (json) {
                 }
             };
         }
-    }
+    }*/
 
     title_song.innerHTML = json.songs[current_song].title;
 });
@@ -79,6 +81,7 @@ playButton.onclick = function () {
         };
     }
     player.play();
+    player_duration.style.display = "initial";
     cover_img.style.animation = "rotateDisc 4s linear infinite";
     playButton.style.display = "none";
     pauseButton.style.display = "initial";

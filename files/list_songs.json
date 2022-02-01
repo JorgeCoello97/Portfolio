@@ -1,16 +1,16 @@
 {
     "songs": [
         {
+            "title": "Cotton Candy",
+            "file": "cotton_candy.mp3"
+        },
+        {
             "title": "Looks so Perfect",
             "file": "looks_so_perfect.mp3"
         },
         {
             "title": "Fireworks",
             "file": "fireworks.mp3"
-        },
-        {
-            "title": "Cotton Candy",
-            "file": "cotton_candy.mp3"
         },
         {
             "title": "Stressed Out",
